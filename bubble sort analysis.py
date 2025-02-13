@@ -24,3 +24,8 @@ for i in range(len(array)-1):
 print(array)
 print("Comparisons: " , comparisons)
 print("Swaps: " , swaps)
+
+#number of comparisons / worst-case scenario of number of swaps
+n = len(array)
+expected_comparisons = (n * (n - 1)) // 2  
+print("Expected Number of Comparisons:", expected_comparisons)
