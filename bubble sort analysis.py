@@ -12,11 +12,15 @@ print(array)
 #analysing the bubble sort
 array = [3, 9, 5, 6, 1]
 comparisons = 0
+swaps = 0
 for i in range(len(array)-1):
     for j in range(len(array)-1-i):
+        comparisons += 1
         if array[j] > array[j+1]:
             array[j], array[j+1] = array[j+1], array[j]
-            comparisons += 1
+            swaps += 1
+            
 
 print(array)
-print(comparisons)
+print("Comparisons: " + comparisons)
+print("Swaps: " + swaps)
