@@ -22,5 +22,5 @@ for i in range(len(array)-1):
             
 
 print(array)
-print("Comparisons: " + comparisons)
-print("Swaps: " + swaps)
+print("Comparisons: " , comparisons)
+print("Swaps: " , swaps)
