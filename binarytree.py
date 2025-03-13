@@ -24,6 +24,16 @@ def add_node(node):
         is_right_child == false
       else: 
         is_right_child == true
+      node_index = tree.index(node)
+      if is_left_child == true and is_right_child == true:
+        #this means that the new node cannot be a child of this node
+        pass
+      elif is_left_child == false:
+        left_child_index = node_index*2
+        tree[left_child_index] = node
+      else:
+        right_child_index == node_index*2+1
+        tree[right_child_index] = node
 
 def find_left_child(node):
   node_index = tree.index(node)
