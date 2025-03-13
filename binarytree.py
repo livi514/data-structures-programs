@@ -11,6 +11,8 @@ def add_node(node):
     tree.append(node)
   else:
     #add node somehow?
+    for node in tree:
+      #find a node with less than two children
 
 def find_left_child(node):
   node_index = tree.index(node)
