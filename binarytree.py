@@ -16,8 +16,11 @@ def add_node(node):
 
 def find_left_child(node):
   node_index = tree.index(node)
-  left_child_index = node_index*2
-  return tree[left_child_index]
+  num_nodes = len(tree)-1
+  if 2*node_index <= num_nodes:
+    left_child_index = node_index*2
+  else:
+    return -1 #indicates that the node has no left child
 
 def find_right_child(node):
   node_index = tree.index(node)
