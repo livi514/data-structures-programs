@@ -13,6 +13,17 @@ def add_node(node):
     #add node somehow?
     for node in tree:
       #find a node with less than two children
+      #so for each node, we would have to check whether the node has a left child and a right child
+      left_child = find_left_child(node)
+      right_child = find_right_child(node)
+      if left_child == -1:
+        is_left_child == false
+      else:
+        is_left_child == true
+      if right_child == -1:
+        is_right_child == false
+      else: 
+        is_right_child == true
 
 def find_left_child(node):
   node_index = tree.index(node)
