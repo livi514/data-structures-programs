@@ -1,5 +1,7 @@
 #Task: implement a binary tree with functions for insertion and inorder traversal.
 
+#NOT FINISHED - NEED TO FINISH IMPLEMENTING ADD_NODE, AND IMPLEMENT A FUNCTION FOR IN-ORDER TRAVERSAL
+
 #implement the tree as a list
 tree = [null] #the first element will be Null, to make operations easier later
 
